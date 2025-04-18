@@ -1,0 +1,55 @@
+h1{
+    color: red;
+}
+
+h2{
+    font-style: italic;
+    color: green;
+}
+
+.line{
+    text-decoration: line-through;
+}
+
+.highlight{
+    background-color: yellow;
+    display: inline;
+
+}
+
+.otchnge{
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.spacing{
+    letter-spacing:5px;
+    color:blueviolet
+}
+
+.threelist{
+    background-color: yellow;
+    display: inline;
+    font-weight: bold;
+}
+
+.pchange{
+    color:brown;
+    font-size: 18px;
+}
+
+.p2change{
+    color: blue;
+    font-size: 10px;;
+}
+
+.stylechange{
+    font-size: 16px;
+    color: orangered;
+    font-style: italic;
+}
+
+a{
+    display: inline;
+    background-color: palevioletred;
+}
