@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Day Interview Questions</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .txt {
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <h2> Q1- Difference between flex row and column?</h2>
+    <p> flex-direction: row - The flexible items are displayed horizontally, as a row.<br>
+        flex-direction: column - The flexible items are displayed vertically, as a column.</p>
+
+    <strong>This is flex row </strong>
+
+    <div class="row-direction">
+        <div class="boxes">Item 1</div>
+        <div class="boxes">Item 2</div>
+        <div class="boxes">Item 3</div>
+    </div>
+    <br>
+
+    <strong>This is flex column </strong>
+
+    <div class="column-direction">
+        <div class="card">card 1</div>
+        <div class="card">card 2</div>
+        <div class="card">card 3</div>
+    </div>
+
+    <h2> Q2- Explain inline , internal and external stylesheet?</h2>
+    <p><b>Inline -</b> Inside an HTML tag using the style attribute.<br>
+        <b>Internal -</b> inside a <mark>style </mark> tag within the HTML file's <mark>head</mark>.<br>
+        <b>External -</b> In a separate .css file and linked using a <mark>link </mark> tag in the HTML
+        <mark>head</mark>.
+    </p>
+
+    <p style="color: red;">This is inline text.</p>
+    <p class="txt">This is internal text.</p>
+    <p class="txt1">This is external CSS.</p>
+
+    <h2> Q3- Justify-content allows you to do what?</h2>
+    <p>It controls the horizontal alignment of flex items which is usually left-to-right in flex-direction: row.</p>
+    <p> flex-start - Aligns items to the left (start).<br>
+        flex-end - Aligns items to the right (end.)<br>
+        center - Centers items in the middle.<br>
+        space-between - Equal space between items only.<br>
+        space-around - Equal space around items.<br>
+        space-evenly - Equal space between and around all items</p>
+
+    <div class="supperMain">
+        <div class="main1">
+            <div class="start">1</div>
+            <div class="start">2</div>
+        </div>
+
+        <div class="main2">
+            <div class="end">1</div>
+            <div class="end">2</div>
+        </div>
+
+        <div class="main3">
+            <div class="center">1</div>
+            <div class="center">2</div>
+        </div>
+
+        <div class="main4">
+            <div class="between">1</div>
+            <div class="between">2</div>
+        </div>
+
+        <div class="main5">
+            <div class="around">1</div>
+            <div class="around">2</div>
+        </div>
+
+        <div class="main6">
+            <div class="evenly">1</div>
+            <div class="evenly">2</div>
+        </div>
+
+    </div>
+
+    <h2> Q4- Difference between absolute and relative positioning?</h2>
+    <p><b>Absolute -</b> Moves from nearest positioned ancestor or page.<br>
+    <b>Relative -</b> Moves from original place.</p>
+
+    <div class="outer">
+        <div class="relative-box">Relative</div>
+        <div class="absolute-box">Absolute</div>
+    </div>
+
+     <h2> Q5- What is the difference between padding and margin?</h2>
+        <p><b>Padding -</b> It is the space inside an element, between its content and border.<br>
+        <b>Margin -</b> It is the space outside the element, between the element and others.</p>
+    
+        <div class="main">
+            <div class="both">Hello! I'm a box</div>
+        </div> 
+
+    <h2> Q6- What is the z-index in CSS?</h2>
+    <p>It controls the stacking order of elements on the z-axis (front-to-back).<br>
+       <b>Higher z-index = appears on top.</b> <br>
+        <b>Lower z-index = stays behind.</b></p>
+
+        <div class="container">
+            <div class="box purple-box">z-index: 1</div>
+            <div class="box yellow-box">z-index: 2</div>
+            <div class="box red-box">z-index: 3</div>
+        </div>
+
+
+</body>
+
+</html>
