@@ -131,7 +131,7 @@ button{
     padding: 5px;
     position: relative;
 }
-@media  screen and (max-width: 768px) {
+@media (min-width:300px) and (max-width: 768px) {
     .main-box1 {
         flex-direction: column;
         align-items: flex-start;
