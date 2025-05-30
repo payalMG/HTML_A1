@@ -65,19 +65,21 @@ body{
     margin-bottom: -50px;
     z-index: 1;
 }   
-.cars{
+.cars {
     position: relative;
-    bottom: -110px;
 }
-.flag{
-    height: 60px;
-    width: 70px;
-    position: relative;
-    z-index: 1;
-    margin-bottom: -238px;
-    margin-left: 580px; 
 
+@media (min-width: 320px) and (max-width: 768px) {
+    .flag {
+        position: absolute;
+        width: 40px;
+        height: 50px;
+        top: 30px;     /* adjust based on car height */
+        left: 150px;   /* adjust based on car position */
+        z-index: 2;
+    }
 }
+
 .wheel-1{
     height: 57px;
     width: 57px;
