@@ -152,7 +152,7 @@ body{
     /* Adjust flag */
     .flag {
         width: 50px;
-        height: 45px;
+        height: 90px;
         margin-left: 160px;
         margin-bottom: -200px;
     }
