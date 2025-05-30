@@ -133,3 +133,60 @@ body{
         left: -100%;
     }
 }
+
+@media screen and (max-width: 600px) {
+    .p {
+        flex-direction: column;
+        font-size: 20px;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    .car {
+        width: 200px;
+        height: 90px;
+        margin-left: 80px;
+    }
+
+
+    .flag {
+        width: 50px;
+        height: 45px;
+        margin-left: 160px;
+        margin-bottom: -200px;
+    }
+
+    .wheel-1,
+    .wheel-2 {
+        width: 35px;
+        height: 35px;
+        left: 130px;
+        top: 95px;
+    }
+
+    .sun {
+        width: 50px;
+        height: 50px;
+        left: 250px;
+    }
+
+    .main2 {
+        height: 150px;
+        margin-top: 50px;
+    }
+
+    .city {
+        height: 180px;
+        background-size: contain;
+    }
+
+    .body {
+        height: auto;
+    }
+
+    body {
+        height: auto;
+        padding: 10px;
+    }
+}
+
