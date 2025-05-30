@@ -139,3 +139,34 @@ a{
     font-size: 30px;
     margin-left: 100px;
 }
+
+@media  (min-width:320px) and (max-width: 768px) {
+    body {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    h1 {
+        margin-left: 0;
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .li-1 {
+        flex-direction: column;
+        align-items: center;
+    }
+    a1 {
+        width: 80px;
+        height: 80px;
+        margin: 10px 0;
+    }
+
+    a {
+        font-size: 20px;
+        display: block;
+        text-align: center;
+        margin-left: 0;
+        margin-top: 20px;
+    }
+}
