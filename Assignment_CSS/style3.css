@@ -133,7 +133,6 @@ body{
         left: -100%;
     }
 }
-
 @media (min-width: 320px) and (max-width: 768px) {
 
     /* Adjust text */
@@ -207,3 +206,6 @@ body{
         background: linear-gradient(to right, sandybrown, white, green);
     }
 }
+
+
+   
