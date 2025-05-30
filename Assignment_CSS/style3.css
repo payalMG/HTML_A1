@@ -30,27 +30,25 @@ body{
     background-color: green;
     margin-right: 5px;
 }
-.main2{
+.main2 {
     background-image: url(./road.jpg);
     height: 210px;
-    width: 500%;
+    width: 100%;
     position: relative;
-    background-repeat: repeat;
+    background-repeat: repeat-x;
     background-size: cover;
-    animation-name: road;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
+    animation: roadMove 10s linear infinite;
     margin-top: 90px;
 }
-@keyframes road{
-    0%{
-        right: 0%;
+@keyframes roadMove {
+    0% {
+        background-position: 0 0;
     }
-    100%{
-        right: 100%;
+    100% {
+        background-position: -1000px 0; /* Adjust value based on image width */
     }
 }
+
 .city{
     height: 265px;  
     background-image: url(./city.png);
