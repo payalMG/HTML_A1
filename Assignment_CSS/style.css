@@ -365,6 +365,134 @@ h3 i {
     line-height: 1.6;
   }
 
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .main-page, #about, section {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+  .img-photo, .profile-photo img {
+    margin: 40px auto 0 auto;
+    margin-left: 0;
+    margin-top: 40px;
+  }
+  .about-content {
+    margin-left: 0;
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .about-text {
+    margin-left: 0;
+    text-align: center;
+  }
+  .project-container {
+    margin-left: 0;
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    height: auto;
+    padding: 10px 0;
+  }
+  .heading {
+    padding-left: 0;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+    margin-right: 0;
+    align-items: center;
+  }
+  .main-page {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+  }
+  .page-content h1,
+  .title,
+  .description {
+    margin-left: 0;
+    margin-top: 20px;
+    text-align: center;
+  }
+  .btn, .btn-sci {
+    margin-left: 0;
+    justify-content: center;
+  }
+  .style-fonts {
+    margin-left: 0;
+    margin-top: 15px;
+    justify-content: center;
+  }
+  .img-photo {
+    margin-left: 0;
+    margin-top: 30px;
+    width: 220px;
+    height: 220px;
+  }
+  .profile-photo img {
+    width: 170px;
+    height: 170px;
+    margin-top: 30px;
+  }
+  #about, #skills, #project {
+    padding: 40px 10px;
+  }
+  .about-content, .skills-grid, .project-list {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    display: flex;
+  }
+  .about-text h2, #skills h2, #project h2 {
+    font-size: 28px;
+  }
+  .project-card, .skill-box {
+    width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    padding-left: 0;
+    font-size: 90%;
+  }
+  .heading {
+    font-size: 1.1rem;
+  }
+  .img-photo,
+  .profile-photo img {
+    width: 120px;
+    height: 120px;
+    margin-top: 20px;
+  }
+  .about-text h2, #skills h2, #project h2 {
+    font-size: 22px;
+  }
+  .about-text h3, .project-card h3, .skill-box h3 {
+    font-size: 16px;
+  }
+  .about-text p, .project-card p, .skill-box ul {
+    font-size: 14px;
+  }
+  .btn {
+    width: 120px;
+    height: 32px;
+    font-size: 14px;
+    padding-top: 8px;
+  }
+}
+
+
 
   
 
