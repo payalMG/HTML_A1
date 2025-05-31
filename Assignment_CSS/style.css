@@ -126,18 +126,33 @@ nav {
 }
 
 
-.scn-box {
+/* .scn-box {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
-  /* optionally add some padding or margin */
+ 
 }
 
-.img-box {
-  /* optional styles */
+ */
+
+ .img-box {
+    padding: 5px;
 }
+
 
 .img-photo {
+    width: 300px;
+    height: 350px;
+    border-radius: 50%;
+    border: 2px solid black;
+    overflow: hidden;
+    display: flex
+;
+    margin-top: 130px;
+    margin-left: 100px;
+}
+
+/* .img-photo {
   width: 300px;
   height: 350px;
   border-radius: 50%;
@@ -145,8 +160,8 @@ nav {
   overflow: hidden;
   display: flex;
   margin-top: 130px;
-  margin-left: 0; /* remove margin-left */
-}
+  margin-left: 0; 
+} */
 
 .img-photo img {
   width: 100%;
@@ -156,9 +171,12 @@ nav {
 
 
 section {
-    min-height: 100vh; /* or just remove height */
+    /* min-height: 100vh;     or just remove height */
+    /* display: flex; */
+    /* flex-direction: column;    For stacking on mobile */
+    height: 93vh;
     display: flex;
-    flex-direction: column; /* For stacking on mobile */
+
 }
 
 
@@ -348,70 +366,7 @@ h3 i {
   }
 
 
-  @media (max-width: 768px) {
-  .img-photo {
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 50px;
-  }
-
-  .scn-box {
-    justify-content: center;
-    flex-direction: column;
-  }
-
-  .img-photo {
-    width: 200px;
-    height: 200px;
-  }
-
-
-  section {
-    height: auto !important;  /* Override fixed height */
-    flex-direction: column !important;
-  }
   
-  #about {
-    padding: 40px 20px !important;
-  }
-
-  #project {
-    padding: 40px 20px !important;
-    margin-top: 60px !important; /* Add spacing so it doesn't stick to About */
-  }
-
-  .about-content {
-    flex-direction: column !important;
-    margin-left: 0 !important;
-  }
-
-  .project-container {
-    margin-left: 0 !important;
-    margin-top: 40px !important;
-  }
-}
-@media (min-width: 1024px) {
-  .img-photo {
-    margin-left: 100px;  /* align image to the left with space */
-    margin-top: 130px;
-  }
-
-  .scn-box {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-  }
-
-  .img-photo img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-}
 
 
 
-
-
- 
-   
