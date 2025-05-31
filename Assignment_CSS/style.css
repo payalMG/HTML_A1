@@ -149,9 +149,11 @@ nav {
 }
 
 section {
-    height: 100vh;
+    min-height: 100vh; /* or just remove height */
     display: flex;
+    flex-direction: column; /* For stacking on mobile */
 }
+
 
 #about {
     background: linear-gradient(to right, lightblue, lightpink);
@@ -338,98 +340,30 @@ h3 i {
     line-height: 1.6;
   }
 
-@media (max-width: 768px) {
 
-  /* Make nav vertical and items centered */
-  nav {
-    flex-direction: column;
-    height: auto;
-    padding: 10px 0;
-  }
   
-  .nav-links {
-    flex-direction: column;
-    gap: 10px;
-    margin-right: 0;
-  }
-  
-  /* Stack main page vertically */
-  .main-page {
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-  }
-
-  /* Center and resize headings and paragraphs */
-  .page-content h1,
-  .title,
-  .description,
-  .btn {
-    margin-left: 0 !important;
-    margin-top: 10px !important;
-    text-align: center;
-  }
-  
-  /* Center the image and make it smaller */
-  .img-photo {
-    margin: 40px auto 20px auto !important;
-    width: 150px !important;
-    height: 150px !important;
-  }
-
-  .img-photo img {
-    width: 100% !important;
-    height: 100% !important;
-  }
-  
-  /* About section stacked vertically */
-  #about {
+   @media (max-width: 768px) {
+  section {
+    height: auto !important;  /* Override fixed height */
     flex-direction: column !important;
-    padding: 20px !important;
-    align-items: center;
-    text-align: center;
   }
   
+  #about {
+    padding: 40px 20px !important;
+  }
+
+  #project {
+    padding: 40px 20px !important;
+    margin-top: 60px !important; /* Add spacing so it doesn't stick to About */
+  }
+
   .about-content {
     flex-direction: column !important;
     margin-left: 0 !important;
-    gap: 20px;
   }
-  
-  .about-text {
-    margin-left: 0 !important;
-    width: 100%;
-    padding: 0 15px;
-  }
-  
-  .profile-photo img {
-    width: 150px !important;
-    height: 150px !important;
-    margin-top: 30px !important;
-  }
-  
-  /* Projects section margin reset and stacking */
+
   .project-container {
     margin-left: 0 !important;
-    margin-top: 30px !important;
-    padding: 0 15px;
-  }
-
-  .project-list {
-    grid-template-columns: 1fr !important;
-  }
-
-  /* Skills section full width */
-  #skills {
-    padding: 40px 15px !important;
-  }
-
-  .skills-container {
-    max-width: 100% !important;
-    padding: 0 10px;
-  }
-
-  .skills-grid {
-    grid-template-columns: 1fr !important;
+    margin-top: 40px !important;
   }
 }
