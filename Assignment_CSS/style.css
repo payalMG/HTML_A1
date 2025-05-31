@@ -348,14 +348,24 @@ h3 i {
   }
 
 
-  
-   @media (max-width: 768px) {
-
+  @media (max-width: 768px) {
   .img-photo {
     margin-left: auto;
     margin-right: auto;
     margin-top: 50px;
   }
+
+  .scn-box {
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .img-photo {
+    width: 200px;
+    height: 200px;
+  }
+}
+
   section {
     height: auto !important;  /* Override fixed height */
     flex-direction: column !important;
@@ -380,3 +390,22 @@ h3 i {
     margin-top: 40px !important;
   }
 }
+@media (min-width: 1024px) {
+  .img-photo {
+    margin-left: 100px;  /* align image to the left with space */
+    margin-top: 130px;
+  }
+
+  .scn-box {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .img-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
